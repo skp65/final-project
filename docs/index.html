@@ -8,156 +8,143 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" href="./img/icon.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Basic - Bootstrap 4 with Gulp 4</title>
     </head>
     
     <body>
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> <a class="navbar-brand" href="index.html">Home</a>
-                <button class="navbar-toggler"
-                type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto justify-content-end">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a>
-
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item"> <a class="nav-link" href="project1.html">Statistics</a>
+                        </li>
+                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                        Projects
+                        Websites
 
                     </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> <a class="dropdown-item" href="project1.html">Project 1</a> <a class="dropdown-item"
-                                href="project2.html">Project 2</a> <a class="dropdown-item" href="project3.html">Project 3</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="google.html">Google</a> <a class="dropdown-item"
+                                href="youtube.html">Youtube</a> <a class="dropdown-item" href="facebook.html">Facebook</a>
+                                <a
+                                class="dropdown-item" href="twitter.html">Twitter</a> <a class="dropdown-item" href="baidu.html">Baidu</a> <a class="dropdown-item"
+                                    href="instagram.html">Instagram</a> <a class="dropdown-item" href="wikipedia.html">Wikipedia</a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
-
+                        <li class="nav-item"> <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="sitemap.html">Site Map</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main role="main">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                    <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/hello.jpg" class="img-fluid" style="opacity: .5" alt="Responsive image">
-                        <div class="container">
-                            <div class="carousel-caption text-left text-dark">
-                                 <h1>Project 1</h1>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.</p>
-                                <p><a class="btn btn-lg btn-primary" href="project1.html" role="button">View Project 1</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hender.jpg" class="img-fluid" style="opacity: .5" alt="Responsive image">
-                        <div class="container">
-                            <div class="carousel-caption text-left text-dark">
-                                 <h1>Project 2</h1>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.</p>
-                                <p><a class="btn btn-lg btn-primary" href="project2.html" role="button">View Project 2</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/unsplash.jpg" class="img-fluid" style="opacity: .5" alt="Responsive image">
-                        <div class="container">
-                            <div class="carousel-caption text-left text-dark">
-                                 <h1>Project 3</h1>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.</p>
-                                <p><a class="btn btn-lg btn-primary" href="project3.html" role="button">View Project 3</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-            <span class="sr-only">Previous</span>
-
-        </a> <a class="carousel-control-next" href="#myCarousel" role="button"
-                data-slide="next">
-
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-            <span class="sr-only">Next</span>
-
-        </a>
-            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card shadow-sm">
-                            <div class="card-img-top mx-auto pt-3 pb-3 h-75 w-75">
-                                <img class="rounded-circle img-fluid" src="img/hello.jpg">
-                            </div>
-                            <div class="card-header card-subtitle mb-2">
-                                 <h3>Callout 1</h3>
-                            </div>
-                            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non fermentum
-                                justo. Phasellus sollicitudin urna quis libero pellentesque, et sagittis
-                                nibh venenatis. Vestibulum iaculis arcu quis ipsum rutrum, eget finibus
-                                odio tempus. Nullam placerat facilisis tellus, ac sagittis libero mollis
-                                at. Praesent convallis mauris nulla, at rutrum urna venenatis eget. Fusce
-                                varius nibh eget hendrerit consequat.</div>
+                 <h2>Top Sites</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/google.png" alt="Los Angeles" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="img/youtube.png" alt="Chicago" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="img/facebook.png" alt="New york" style="width:100%;">
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card shadow-sm">
-                            <div class="card-img-top mx-auto pt-3 pb-3 h-75 w-75">
-                                <img class="rounded-circle img-fluid" src="img/hello.jpg">
+                    <!-- Left and right controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+
+                <span class="glyphicon glyphicon-chevron-left"></span>
+
+                <span class="sr-only">Previous</span>
+
+            </a> <a class="right carousel-control" href="#myCarousel" data-slide="next">
+
+                <span class="glyphicon glyphicon-chevron-right"></span>
+
+                <span class="sr-only">Next</span>
+
+            </a>
+                </div>
+                 <h4> There are many websites that have been available in the internet to almost everybody since the past 20
+
+            years. The popularity of each website is different and is determined by number of users visited that
+
+            website, etc.
+
+            <br>The top three websites worldwide that has taken over in terms of visits are:
+
+            <br><h4 style="text-align: center;"><b>Google, YouTube
+
+                & Facebook</b> </h4></h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm">
+                                <div class="card-img-top mx-auto pt-3 pb-3 h-75 w-75"><a href="https://www.google.com"><img
+
+                                class="img-fluid" src="img/google%20logo.jpg"></a>
+                                </div>
+                                <div class="card-header card-subtitle mb-2">
+                                     <h3 style="text-align: center">Google</h3>
+                                </div>
+                                <div class="card-body" style="text-align: center">Google is a company who is mostly famous for creating the search engine
+                                    called <a href="https://www.google.com">google.com</a>. It was created in
+                                    1998 and 22 years in the future it is the number one website in the world
+                                    that everybody visits to google/search things of their interest.</div>
                             </div>
-                            <div class="card-header card-subtitle mb-2 ">
-                                 <h3>Callout 1</h3>
-                            </div>
-                            <div class="card-body text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non fermentum
-                                justo. Phasellus sollicitudin urna quis libero pellentesque, et sagittis
-                                nibh venenatis. Vestibulum iaculis arcu quis ipsum rutrum, eget finibus
-                                odio tempus. Nullam placerat facilisis tellus, ac sagittis libero mollis
-                                at. Praesent convallis mauris nulla, at rutrum urna venenatis eget. Fusce
-                                varius nibh eget hendrerit consequat.</div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card shadow-sm">
-                            <div class="card-img-top mx-auto pt-3 pb-3 h-75 w-75">
-                                <img class="rounded-circle img-fluid" src="img/hello.jpg">
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm">
+                                <div class="card-img-top mx-auto pt-3 pb-3 h-75 w-75"> <a href="https://www.youtube.com"><img class="rounded-circle img-fluid"
+
+                                                                   src="img/youtubelogo.webp"></a>
+                                </div>
+                                <div class="card-header card-subtitle mb-2 ">
+                                     <h3 style="text-align: center">YouTube</h3>
+                                </div>
+                                <div class="card-body" style="text-align: center">Youtube was initially started by three PayPal employees above a pizzeria
+                                    and a Japanese restaurant in California in May 2005. After 15 years this
+                                    website was the number one streaming website for videos and number 2 as
+                                    the most visited website due to its nature of streaming videos.</div>
                             </div>
-                            <div class="card-header card-subtitle mb-2">
-                                 <h3>Callout 1</h3>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm">
+                                <div class="card-img-top mx-auto pt-3 pb-3 h-75 w-75"> <a href="https://www.facebook.com"><img class="img-fluid" src="img/facebooklogo.png"></a>
+                                </div>
+                                <div class="card-header card-subtitle mb-2">
+                                     <h3 style="text-align: center">Facebook</h3>
+                                </div>
+                                <div class="card-body " style="text-align: center">Facebook was launched in 2004 which is a online social media founded by
+                                    Mark Zuckerberg along with his four roommates. It initially started its
+                                    access for Harvard college students then slowly it expanded to other universities
+                                    and high school. Since then it has come a long way that it became number
+                                    third website around the world.</div>
                             </div>
-                            <div class="card-body ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non fermentum
-                                justo. Phasellus sollicitudin urna quis libero pellentesque, et sagittis
-                                nibh venenatis. Vestibulum iaculis arcu quis ipsum rutrum, eget finibus
-                                odio tempus. Nullam placerat facilisis tellus, ac sagittis libero mollis
-                                at. Praesent convallis mauris nulla, at rutrum urna venenatis eget. Fusce
-                                varius nibh eget hendrerit consequat.</div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
         </main>
         <!-- /.container -->
-        <footer class="footer">
+        <footer class="footer"> <a href="sitemap.html"> Sitemap</a>
             <div class="container"> <span class="text-muted"> © 2020 Shivam Patel</span>
             </div>
         </footer>

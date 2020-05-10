@@ -4,7 +4,6 @@ $theme-colors: (
         "primary": #ff3a52,
         "dark": #000000
 );
-
 body {
     padding-top: 5rem;
 }
@@ -15,10 +14,23 @@ body {
     text-align: center;
     padding-top: 1%;
 }
-.navbar {
-    border-bottom:1px solid #eee;
+.container h2{
+    text-align: right;
+    font-size: 12px;
 }
-
+nav {
+    font-size: 25px;
+}
+.nav.justify-content-center li a{
+    color: darkcyan;
+}
+.content h1{
+    color: darkcyan;
+}
+.container h4{
+    line-height: 35px ;
+    color: coral;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -27,7 +39,12 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-
+.col h3{
+    text-align: center;
+}
+table th, td{
+    text-align: center;
+}
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -125,8 +142,7 @@ body {
         margin-top: 7rem;
     }
 }
-
-
-
-
-
+.heading{
+    text-align: center;
+    color: coral;
+}

@@ -9,68 +9,126 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge" />
             <link rel="stylesheet" href="css/style.css" />
             <link rel="icon" href="./img/icon.png" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <title>Basic - Bootstrap 4 with Gulp 4</title>
         </head>
         
         <body>
             <header>
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> <a class="navbar-brand" href="index.html">Home</a>
-                    <button class="navbar-toggler"
-                    type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav mr-auto justify-content-end">
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a>
-
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item"> <a class="nav-link" href="project1.html">Statistics</a>
+                            </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                        Projects
+                        Websites
 
                     </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> <a class="dropdown-item" href="project1.html">Project 1</a> <a class="dropdown-item"
-                                    href="project2.html">Project 2</a> <a class="dropdown-item" href="project3.html">Project 3</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="google.html">Google</a> <a class="dropdown-item"
+                                    href="youtube.html">Youtube</a> <a class="dropdown-item" href="facebook.html">Facebook</a>
+                                    <a
+                                    class="dropdown-item" href="twitter.html">Twitter</a> <a class="dropdown-item" href="baidu.html">Baidu</a> <a class="dropdown-item"
+                                        href="instagram.html">Instagram</a> <a class="dropdown-item" href="wikipedia.html">Wikipedia</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
-
+                            <li class="nav-item"> <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="sitemap.html">Site Map</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </header>
-            </div>
             <div class="content">
                 <div class="row">
                     <div class="col">
                          <h3>
 
-                    Project 1
+                    WorldWide Websites Statistics (April 2020)
 
                 </h3>
                         <table class="table table-striped text-left table-bordered shadow-sm">
                             <thead class="thead-dark">
                                 <tr class="left">
-                                    <th scope="col">#</th>
-                                    <th scope="col">Project Title</th>
-                                    <th scope="col">Project Description</th>
-                                    <th scope="col">Course</th>
-                                    <th scope="col">Project GitHub Repo</th>
-                                    <th scope="col">Running Project</th>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">Website</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Change in Rank</th>
+                                    <th scope="col">Avg. Visit Duration</th>
+                                    <th scope="col">Pages Per Visit</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td scope="row">1</td>
-                                    <td>Making a Website</td>
-                                    <td>My Portfolio</td>
-                                    <td>IS 117</td>
-                                    <td><a href="http://github.com/skp65">My Repository</a>
+                                    <td><a href="https://www.google.com/">google.com</a>
                                     </td>
-                                    <td><a href="https://skp65.github.io/bootstrap-4-boilerplate/index.html">My Project</a>
+                                    <td>Search Engines</td>
+                                    <td>None</td>
+                                    <td>00:11:17</td>
+                                    <td>8.59</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td><a href="https://www.youtube.com/">youtube.com</a>
                                     </td>
+                                    <td>Arts & Entertainment</td>
+                                    <td>None</td>
+                                    <td>00:21:34</td>
+                                    <td>9.01</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td><a href="https://www.facebook.com/">facebook.com</a>
+                                    </td>
+                                    <td>Social Media</td>
+                                    <td>None</td>
+                                    <td>00:11:04</td>
+                                    <td>8.96</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">4</td>
+                                    <td><a href="https://www.twitter.com/">twitter.com</a>
+                                    </td>
+                                    <td>Social Media</td>
+                                    <td>None</td>
+                                    <td>00:10:34</td>
+                                    <td>11.54</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">5</td>
+                                    <td><a href="https://www.baidu.com/">baidu.com</a>
+                                    </td>
+                                    <td>Search Engines</td>
+                                    <td>None</td>
+                                    <td>00:08:03</td>
+                                    <td>8.55</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">6</td>
+                                    <td><a href="https://www.instagram.com/">instagram.com</a>
+                                    </td>
+                                    <td>Social Media</td>
+                                    <td>None</td>
+                                    <td>00:07:23</td>
+                                    <td>11.33</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">7</td>
+                                    <td><a href="https://www.wikipedia.org/">wikipedia.org</a>
+                                    </td>
+                                    <td>Dictionaries & Encyclopedias</td>
+                                    <td>+1</td>
+                                    <td>00:04:00</td>
+                                    <td>3.04</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -78,7 +136,7 @@
                 </div>
 </main>
 <!-- /.container -->
-<footer class="footer">
+<footer class="footer"> <a href="sitemap.html"> Sitemap</a>
     <div class="container"> <span class="text-muted"> © 2020 Shivam Patel</span>
     </div>
 </footer>
